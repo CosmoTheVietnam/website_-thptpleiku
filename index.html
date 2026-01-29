@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giới thiệu Trường ĐH Thương mại</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Banner */
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      background: url("https://toquoc.mediacdn.vn/280518851207290880/2022/8/30/1-dai-hoc-thuong-mai-16618289693132094458878.jpg") no-repeat center center;
+      background-size: cover;
+    }
+    .banner::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .banner h1 {
+      position: relative;
+      font-size: 2.5rem;
+      z-index: 1;
+    }
+
+    /* Slogan */
+    .slogan {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      width: 100%;
+    }
+    .slogan h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .slogan p {
+      font-size: 1.2rem;
+      margin: 0.3rem 0;
+    }
+
+    /* Content 3 columns */
+    .content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 2rem;
+      width: 100%;
+    }
+    .content-box {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .content-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    .content-box h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .content-box p, .content-box li {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .content {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <h1>TRƯỜNG ĐẠI HỌC THƯƠNG MẠI HÀ NỘI</h1>
+  </div>
+
+  <div class="slogan">
+    <h2>HỌC TẬP VÌ TƯƠNG LAI</h2>
+    <p>Kiến thức mở ra cơ hội</p>
+    <p>Thành công bắt đầu từ hôm nay</p>
+  </div>
+
+  <div class="content">
+    <div class="content-box">
+      <img src="https://tmu.edu.vn/upload/staticpage/original/staticpage-1760428723.jpg" alt="Giới thiệu chung">
+      <h2>Giới thiệu chung</h2>
+      <p>Trường Đại học Thương mại (tên tiếng Anh: Thuongmai University, tên giao dịch quốc tế viết tắt: TMU) là trường đại học công lập trực thuộc hệ thống giáo dục quốc dân nước Cộng hòa xã hội chủ nghĩa Việt Nam.</p>
+    </div>
+
+    <div class="content-box">
+      <img src="https://tmu.edu.vn/upload/staticpage/original/staticpage-1760089757.jpg" alt="Chương trình đào tạo">
+      <h2>Các chương trình đào tạo</h2>
+      <ul>
+        <li>Kinh tế (Quản lý kinh tế)</li>
+        <li>Kế toán (Doanh nghiệp, Công)</li>
+        <li>Kiểm toán</li>
+        <li>Quản trị nhân lực</li>
+        <li>Thương mại điện tử</li>
+        <li>Quản trị kinh doanh</li>
+        <li>Quản trị khách sạn, du lịch</li>
+        <li>Marketing, Thương hiệu</li>
+        <li>Logistics và Chuỗi cung ứng</li>
+        <li>Luật kinh tế</li>
+        <li>Tài chính – Ngân hàng</li>
+        <li>Kinh doanh quốc tế</li>
+        <li>Ngôn ngữ Anh, Tiếng Trung</li>
+      </ul>
+    </div>
+
+    <div class="content-box">
+      <img src="https://tmu.edu.vn/template_dhtm_v2/images/home/training_specialties/004.jpg" alt="Quy mô đào tạo">
+      <h2>Quy mô đào tạo</h2>
+      <p>5.500+ Sinh viên Chính quy/năm</p>
+      <p>800+ Học viên cao học/năm</p>
+      <p>60+ Nghiên cứu sinh tiến sĩ/năm</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 – Website Demo Trường ĐH | Thiết kế bởi Minh Khooi
+  </div>
+
+</body>
+</html>
